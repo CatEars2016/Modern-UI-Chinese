@@ -3,6 +3,13 @@
 
 使用Modern UI for WPF时发现中文字体显示效果较差且不可修改，于是下载它的源码进行修改。
 
+【2019-02-10】修改内容：
+* 【解决Segoe UI显示中文字体效果较差的问题】
+  * 所有"Segoe UI"字体换成"{DynamicResource DefaultFontFamily}"。
+  * 增加字体资源LightFontFamily，所有"Segoe UI Light"字体换成"{DynamicResource LightFontFamily}"。
+* 增加中文语言支持（Resources.zh.resx），取消其它外语语言。
+* ModernWindow增加IsBackButtonVisible属性，默认值True。
+
 
 # Modern UI for WPF (MUI)
 A set of controls and styles converting your WPF application into a great looking Modern UI app. This open source project is a spin-off of [XAML Spy](http://xamlspy.com), the visual runtime inspector for Silverlight, Windows Phone, Windows Store and WPF. Read the [official announcement](http://xamlspy.com/news/open-sourcing-the-xaml-spy-ui)
