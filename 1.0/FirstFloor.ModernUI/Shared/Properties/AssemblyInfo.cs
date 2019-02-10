@@ -59,4 +59,7 @@ using System;
     //(used if a resource is not found in the page, 
     // app, or any theme specific resource dictionaries)
 )]
-[assembly: NeutralResourcesLanguageAttribute("en-US")]
+
+// CatEars: 增加中文语言支持（Resources.zh.resx），取消其它外语语言
+// CatEars: 取消NeutralResourcesLanguageAttribute("en-US")特性
+//[assembly: NeutralResourcesLanguageAttribute("en-US")]

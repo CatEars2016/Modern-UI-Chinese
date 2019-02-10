@@ -85,7 +85,7 @@
         <Setter Property="Foreground" Value="{DynamicResource LinkButtonText}"/>
         <Setter Property="Width" Value="NaN" />
         <Setter Property="Height" Value="NaN" />
-        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="FontFamily" Value="{DynamicResource DefaultFontFamily}" />
         <Setter Property="FontSize" Value="11" />
         <Setter Property="Template">
             <Setter.Value>

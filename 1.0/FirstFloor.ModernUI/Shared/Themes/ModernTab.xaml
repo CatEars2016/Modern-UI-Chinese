@@ -21,7 +21,7 @@
                             <ListBox.ItemContainerStyle>
                                 <Style TargetType="ListBoxItem">
                                     <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-                                    <Setter Property="FontFamily" Value="Segoe UI" />
+                                    <Setter Property="FontFamily" Value="{DynamicResource DefaultFontFamily}" />
                                     <Setter Property="Foreground" Value="{DynamicResource MenuText}" />
                                     <Setter Property="FontSize" Value="15"/>
                                     <Setter Property="FontWeight" Value="Bold" />

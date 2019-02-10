@@ -36,6 +36,11 @@ namespace FirstFloor.ModernUI.Windows.Controls
         /// Identifies the IsTitleVisible dependency property.
         /// </summary>
         public static readonly DependencyProperty IsTitleVisibleProperty = DependencyProperty.Register("IsTitleVisible", typeof(bool), typeof(ModernWindow), new PropertyMetadata(false));
+        // CatEars: 增加返回按钮可见性属性
+        /// <summary>
+        /// Identifies the IsBackButtonVisible dependency property.
+        /// </summary>
+        public static readonly DependencyProperty IsBackButtonVisibleProperty = DependencyProperty.Register("IsBackButtonVisible", typeof(bool), typeof(ModernWindow), new PropertyMetadata(true));
         /// <summary>
         /// Identifies the LogoData dependency property.
         /// </summary>
@@ -237,6 +242,16 @@ namespace FirstFloor.ModernUI.Windows.Controls
         {
             get { return (bool)GetValue(IsTitleVisibleProperty); }
             set { SetValue(IsTitleVisibleProperty, value); }
+        }
+
+        // CatEars: 增加返回按钮可见性属性
+        /// <summary>
+        /// Gets or sets a value indicating whether the back button is visible in the UI.
+        /// </summary>
+        public bool IsBackButtonVisible
+        {
+            get { return (bool)GetValue(IsBackButtonVisibleProperty); }
+            set { SetValue(IsBackButtonVisibleProperty, value); }
         }
 
         /// <summary>

@@ -10,13 +10,14 @@
             <StackPanel HorizontalAlignment="Left">
                 <TextBlock Text="TEXT STYLING" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
 
-                <TextBlock Text="HEADING1" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
-                <TextBlock Text="HEADING2" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
-                <TextBlock Text="title" Style="{StaticResource Title}" Margin="0,0,0,8"/>
-                <TextBlock Text="Normal" Margin="0,0,0,8"/>
-                <TextBlock Text="small" Style="{StaticResource Small}" Margin="0,0,0,8"/>
-                <TextBlock Text="EMPHASIS" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
-                <TextBlock Text="Fixed" Style="{StaticResource Fixed}" Margin="0,0,0,32"/>
+                <!--  CatEars: 增加中文测试显示效果 -->
+                <TextBlock Text="HEADING1(增加中文测试显示效果)" Style="{StaticResource Heading1}" Margin="0,0,0,8" />
+                <TextBlock Text="HEADING2(增加中文测试显示效果)" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
+                <TextBlock Text="title(增加中文测试显示效果)" Style="{StaticResource Title}" Margin="0,0,0,8"/>
+                <TextBlock Text="Normal(增加中文测试显示效果)" Margin="0,0,0,8"/>
+                <TextBlock Text="small(增加中文测试显示效果)" Style="{StaticResource Small}" Margin="0,0,0,8"/>
+                <TextBlock Text="EMPHASIS(增加中文测试显示效果)" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
+                <TextBlock Text="Fixed(增加中文测试显示效果)" Style="{StaticResource Fixed}" Margin="0,0,0,32"/>
 
                 <TextBlock Text="TEXT AND PASSWORDBOX" Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
                 <TextBox Text="textbox" Margin="0,0,0,8"/>

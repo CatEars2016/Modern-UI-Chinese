@@ -32,7 +32,7 @@
                             <ListBox.ItemContainerStyle>
                                 <Style TargetType="ListBoxItem">
                                     <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-                                    <Setter Property="FontFamily" Value="Segoe UI Light" />
+                                    <Setter Property="FontFamily" Value="{DynamicResource LightFontFamily}" />
                                     <Setter Property="Foreground" Value="{DynamicResource MenuText}" />
                                     <Setter Property="FontSize" Value="23"/>
                                     <Setter Property="HorizontalContentAlignment" Value="Center" />
@@ -74,7 +74,7 @@
                             <ListBox.ItemContainerStyle>
                                 <Style TargetType="ListBoxItem">
                                     <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-                                    <Setter Property="FontFamily" Value="Segoe UI" />
+                                    <Setter Property="FontFamily" Value="{DynamicResource DefaultFontFamily}" />
                                     <Setter Property="Foreground" Value="{DynamicResource SubMenuText}" />
                                     <Setter Property="FontSize" Value="11"/>
                                     <Setter Property="Margin" Value="0,0,12,0" />

@@ -41,6 +41,11 @@
     <FontFamily x:Key="FixedFontFamily">Consolas</FontFamily>
     <sys:Double x:Key="FixedFontSize">13.333</sys:Double>
 
+    <!-- CatEars: 字体修改 -->
+    <!-- 所有"Segoe UI"字体换成"{DynamicResource DefaultFontFamily}" -->
+    <!-- 增加字体资源LightFontFamily，所有"Segoe UI Light"字体换成"{DynamicResource LightFontFamily}" -->
+    <FontFamily x:Key="LightFontFamily">Segoe UI Light</FontFamily>
+
     <sys:Double x:Key="SmallFontSize">11</sys:Double>
 
     <!-- layout margins -->

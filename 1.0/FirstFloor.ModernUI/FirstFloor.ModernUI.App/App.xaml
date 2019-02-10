@@ -9,6 +9,10 @@
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Light.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
+            <!-- 覆盖ModernUI定义的字体 -->
+            <FontFamily x:Key="DefaultFontFamily">微软雅黑</FontFamily>
+            <FontFamily x:Key="FixedFontFamily">微软雅黑</FontFamily>
+            <FontFamily x:Key="LightFontFamily">微软雅黑</FontFamily>
             
         </ResourceDictionary>
     </Application.Resources>

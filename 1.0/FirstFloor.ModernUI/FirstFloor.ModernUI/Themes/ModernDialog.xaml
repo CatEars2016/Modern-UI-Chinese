@@ -47,7 +47,7 @@
 
                                             <!-- title -->
                                             <TextBlock DataContext="{TemplateBinding Title}" Text="{Binding Converter={StaticResource ToUpperConverter}}" 
-                                                   FontFamily="Segoe UI"
+                                                   FontFamily="{DynamicResource DefaultFontFamily}"
                                                    FontSize="24"
                                                    TextOptions.TextFormattingMode="Ideal"
                                                    TextTrimming="CharacterEllipsis" />
