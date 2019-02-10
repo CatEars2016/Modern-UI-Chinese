@@ -1,3 +1,8 @@
+# Modern UI for WPF (MUI) Chinese Support
+源项目：[https://github.com/firstfloorsoftware/mui](https://github.com/firstfloorsoftware/mui)
+使用Modern UI for WPF时发现中文字体显示效果较差且不可修改，于是下载它的源码进行修改。
+
+
 # Modern UI for WPF (MUI)
 A set of controls and styles converting your WPF application into a great looking Modern UI app. This open source project is a spin-off of [XAML Spy](http://xamlspy.com), the visual runtime inspector for Silverlight, Windows Phone, Windows Store and WPF. Read the [official announcement](http://xamlspy.com/news/open-sourcing-the-xaml-spy-ui)
 

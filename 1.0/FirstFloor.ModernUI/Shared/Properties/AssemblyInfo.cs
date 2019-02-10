@@ -41,8 +41,9 @@ using System;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.10")]
-[assembly: AssemblyFileVersion("1.0.10")]
+// CatEars: 修改版本号，避免和原来的版本一样
+[assembly: AssemblyVersion("1.0.10.50000")]
+[assembly: AssemblyFileVersion("1.0.10.50000")]
 
 [assembly: XmlnsDefinition("http://firstfloorsoftware.com/ModernUI", "FirstFloor.ModernUI.Presentation")]
 [assembly: XmlnsDefinition("http://firstfloorsoftware.com/ModernUI", "FirstFloor.ModernUI.Windows")]
