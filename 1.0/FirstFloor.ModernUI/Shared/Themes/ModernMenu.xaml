@@ -43,7 +43,7 @@
                                         <Setter.Value>
                                             <ControlTemplate TargetType="ListBoxItem">
                                                 <TextBlock DataContext="{TemplateBinding Content}"
-                                                           Text="{Binding DisplayName, Converter={StaticResource ToLowerConverter}}"
+                                                           Text="{Binding DisplayName}"
                                                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
@@ -87,8 +87,8 @@
                                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                                       SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
-                                                    <TextBlock Text="{Binding DisplayName, Converter={StaticResource ToUpperConverter}}" TextAlignment="Center"/>
-                                                    <TextBlock Text="{Binding DisplayName, Converter={StaticResource ToUpperConverter}}" FontWeight="Bold" Visibility="Hidden" />
+                                                    <TextBlock Text="{Binding DisplayName}" TextAlignment="Center"/>
+                                                    <!--<TextBlock Text="{Binding DisplayName, Converter={StaticResource ToUpperConverter}}" FontWeight="Bold" Visibility="Hidden" />-->
                                                 </Grid>
                                                 
                                                 <ControlTemplate.Triggers>
@@ -97,7 +97,8 @@
                                                     </Trigger>
                                                     <Trigger Property="IsSelected" Value="true">
                                                         <Setter Property="Foreground" Value="{DynamicResource SubMenuTextSelected}"/>
-                                                        <Setter Property="FontWeight" Value="Bold" />
+                                                        <!--<Setter Property="FontWeight" Value="Bold" />-->
+                                                        <Setter Property="TextBlock.TextDecorations" Value="Underline"></Setter>
                                                     </Trigger>
                                                 </ControlTemplate.Triggers>
                                             </ControlTemplate>

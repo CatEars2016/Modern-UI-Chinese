@@ -96,7 +96,7 @@
                                 BorderBrush="{TemplateBinding BorderBrush}"
                                 SnapsToDevicePixels="true">
                         <TextBlock DataContext="{TemplateBinding Content}"
-                                   Text="{Binding Converter={StaticResource ToUpperConverter}}"
+                                   Text="{Binding}"
                                    Margin="{TemplateBinding Padding}"
                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"

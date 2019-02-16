@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:core="clr-namespace:System;assembly=mscorlib">
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
     <Color x:Key="WindowBackgroundColor">#ffffff</Color>
 
@@ -62,7 +62,7 @@
     <SolidColorBrush x:Key="MenuText" Color="#66000000" />
     <SolidColorBrush x:Key="MenuTextHover" Color="#bb000000" />
     <SolidColorBrush x:Key="MenuTextSelected" Color="#333333" />
-    <core:Double x:Key="MenuFontSize">24</core:Double>
+    <sys:Double x:Key="MenuFontSize">24</sys:Double>
 
     <SolidColorBrush x:Key="ModernButtonBorder" Color="#919191" />
     <SolidColorBrush x:Key="ModernButtonBorderHover" Color="#333333" />
@@ -108,7 +108,7 @@
     <SolidColorBrush x:Key="SubMenuText" Color="#99000000" />
     <SolidColorBrush x:Key="SubMenuTextHover" Color="#66000000" />
     <SolidColorBrush x:Key="SubMenuTextSelected" Color="#333333" />
-    <core:Double x:Key="SubMenuFontSize">12</core:Double>
+    <sys:Double x:Key="SubMenuFontSize">16</sys:Double>
 
     <SolidColorBrush x:Key="WindowBackground" Color="{StaticResource WindowBackgroundColor}" />
     <SolidColorBrush x:Key="WindowBorder" Color="{DynamicResource AccentColor}" Opacity=".5" />

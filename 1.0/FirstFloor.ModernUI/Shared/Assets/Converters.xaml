@@ -6,7 +6,7 @@
     <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     <converters:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
     <converters:NullOrEmptyStringToVisibilityConverter x:Key="NullOrEmptyStringToVisibilityConverter" />
-    <converters:ToUpperConverter x:Key="ToUpperConverter" />
-    <converters:ToLowerConverter x:Key="ToLowerConverter" />
+    <!--<converters:ToUpperConverter x:Key="ToUpperConverter" />-->
+    <!--<converters:ToLowerConverter x:Key="ToLowerConverter" />-->
 
 </ResourceDictionary>

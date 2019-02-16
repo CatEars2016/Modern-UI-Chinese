@@ -46,7 +46,7 @@
                                             </Grid.RowDefinitions>
 
                                             <!-- title -->
-                                            <TextBlock DataContext="{TemplateBinding Title}" Text="{Binding Converter={StaticResource ToUpperConverter}}" 
+                                            <TextBlock DataContext="{TemplateBinding Title}" Text="{Binding}" 
                                                    FontFamily="{DynamicResource DefaultFontFamily}"
                                                    FontSize="24"
                                                    TextOptions.TextFormattingMode="Ideal"

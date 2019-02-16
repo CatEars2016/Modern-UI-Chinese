@@ -38,7 +38,7 @@
                         <Grid Grid.Column="1" >
                             <TextBlock DataContext="{TemplateBinding Content}"
                                        Visibility="{Binding Converter={StaticResource NullOrEmptyStringToVisibilityConverter}, ConverterParameter=inverse}"
-                                       Text="{Binding Converter={StaticResource ToLowerConverter}}"
+                                       Text="{Binding}"
                                        TextTrimming="CharacterEllipsis"
                                        Foreground="{TemplateBinding Foreground}"
                                        Margin="4,-1,0,0"

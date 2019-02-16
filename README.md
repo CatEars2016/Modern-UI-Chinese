@@ -6,7 +6,9 @@
 【2019-02-16】修改内容：
 * 将logo的显示位置移动到窗口左上角。
 * 如果设置了Icon属性但未设置LogoData属性，将会在logo的位置上显示Icon
-* 增加资源MenuFontSize和SubMenuFontSize用于调整菜单字体大小
+* 增加资源MenuFontSize和SubMenuFontSize用于调整菜单字体大小(因为子菜单字体太小了)
+* 去掉SubMenu选中时字体加粗。(因为用在中文上效果不好)
+* 去掉ToUpperConverter和ToLowerConverter等2个转换器。(因为中文中含有英文时，多数情况不希望变大写或者变小写)
 
 【2019-02-10】修改内容：
 * 【解决Segoe UI显示中文字体效果较差的问题】
