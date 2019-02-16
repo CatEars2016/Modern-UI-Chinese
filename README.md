@@ -3,6 +3,10 @@
 
 使用Modern UI for WPF时发现中文字体显示效果较差且不可修改，于是下载它的源码进行修改。
 
+【2019-02-16】修改内容：
+* 将logo的显示位置移动到窗口左上角。
+* 如果设置了Icon属性但未设置LogoData属性，将会在logo的位置上显示Icon
+
 【2019-02-10】修改内容：
 * 【解决Segoe UI显示中文字体效果较差的问题】
   * 所有"Segoe UI"字体换成"{DynamicResource DefaultFontFamily}"。

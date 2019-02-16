@@ -47,22 +47,28 @@
                                     <!-- title bar -->
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="96" />
                                         </Grid.ColumnDefinitions>
 
-                                        <!-- title -->
-                                        <TextBlock Text="{TemplateBinding Title}" Margin="8,0" VerticalAlignment="Center" Style="{StaticResource ModernWindowTitle}"
-                                                   DataContext="{TemplateBinding IsTitleVisible}"
-                                                   Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}"/>
-
+                                        <!-- CatEars: 将Icon显示在logo区，如果设置了LogoData，Icon会被LogoData挡住，等于不显示 -->
+                                        <Border Background="{DynamicResource Accent}" Width="36" Height="36" 
+                                                DataContext="{TemplateBinding Icon}"
+                                                Visibility="{Binding Converter={StaticResource NullToVisibilityConverter}, ConverterParameter=inverse}">
+                                            <Image Source="{Binding}" Stretch="Fill" Width="36" Height="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
                                         <!-- logo (visible only when LogoData is not null) -->
-                                        <Border Grid.Column="1" Background="{DynamicResource Accent}" Width="36" Height="36" Margin="8,0"
+                                        <Border Background="{DynamicResource Accent}" Width="36" Height="36"
                                                 DataContext="{TemplateBinding LogoData}"
                                                 Visibility="{Binding Converter={StaticResource NullToVisibilityConverter}, ConverterParameter=inverse}">
                                             <Path Data="{Binding}" Stretch="Fill" Fill="White" Width="24" Height="24" HorizontalAlignment="Center" VerticalAlignment="Center" />
                                         </Border>
+
+                                        <!-- title -->
+                                        <TextBlock Grid.Column="1" Text="{TemplateBinding Title}" Margin="8,0" VerticalAlignment="Center" Style="{StaticResource ModernWindowTitle}"
+                                                   DataContext="{TemplateBinding IsTitleVisible}"
+                                                   Visibility="{Binding Converter={StaticResource BooleanToVisibilityConverter}}"/>
 
                                         <!-- window system buttons-->
                                         <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Top" WindowChrome.IsHitTestVisibleInChrome="True">
