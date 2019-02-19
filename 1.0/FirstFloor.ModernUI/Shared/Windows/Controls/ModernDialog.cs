@@ -199,7 +199,7 @@ namespace FirstFloor.ModernUI.Windows.Controls
         /// <param name="button">The button.</param>
         /// <param name="owner">The window owning the messagebox. The messagebox will be located at the center of the owner.</param>
         /// <returns></returns>
-        public static MessageBoxResult ShowMessage(string text, string title, MessageBoxButton button, Window owner = null)
+        public static MessageBoxResult ShowMessage(string text, string title = "", MessageBoxButton button = MessageBoxButton.OK, Window owner = null)
         {
             var dlg = new ModernDialog {
                 Title = title,
