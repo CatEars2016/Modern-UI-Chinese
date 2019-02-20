@@ -1,5 +1,6 @@
 # Modern UI for WPF (MUI) Chinese Support
 源项目：[https://github.com/firstfloorsoftware/mui](https://github.com/firstfloorsoftware/mui)
+
 本项目针对个人使用情况（主要用在中文语言的小型项目上）对源码进行调整。
 下面列出主要修改的内容：
 * 所有"Segoe UI"字体换成"{DynamicResource DefaultFontFamily}"，所有"Segoe UI Light"字体换成"{DynamicResource LightFontFamily}"。因为用Segoe UI字体显示汉字效果较差。
