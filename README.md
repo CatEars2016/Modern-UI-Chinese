@@ -1,22 +1,15 @@
 # Modern UI for WPF (MUI) Chinese Support
 源项目：[https://github.com/firstfloorsoftware/mui](https://github.com/firstfloorsoftware/mui)
-
-使用Modern UI for WPF时发现中文字体显示效果较差且不可修改，于是下载它的源码进行修改。
-
-【2019-02-16】修改内容：
-* 将logo的显示位置移动到窗口左上角。
-* 如果设置了Icon属性但未设置LogoData属性，将会在logo的位置上显示Icon
-* 增加资源MenuFontSize和SubMenuFontSize用于调整菜单字体大小(因为子菜单字体太小了)
-* 去掉SubMenu选中时字体加粗。(因为用在中文上效果不好)
-* 去掉ToUpperConverter和ToLowerConverter等2个转换器。(因为中文中含有英文时，多数情况不希望变大写或者变小写)
-
-【2019-02-10】修改内容：
-* 【解决Segoe UI显示中文字体效果较差的问题】
-  * 所有"Segoe UI"字体换成"{DynamicResource DefaultFontFamily}"。
-  * 增加字体资源LightFontFamily，所有"Segoe UI Light"字体换成"{DynamicResource LightFontFamily}"。
-* 增加中文语言支持（Resources.zh.resx），取消其它外语语言。
-* ModernWindow增加IsBackButtonVisible属性，默认值True。
-
+本项目针对个人使用情况（主要用在中文语言的小型项目上）对源码进行调整。
+下面列出主要修改的内容：
+* 所有"Segoe UI"字体换成"{DynamicResource DefaultFontFamily}"，所有"Segoe UI Light"字体换成"{DynamicResource LightFontFamily}"。因为用Segoe UI字体显示汉字效果较差。
+* 增加中文语言支持（Resources.zh.resx），只翻译了一部分；取消其它除了英语之外的语言，因为基本用不到。
+* ModernWindow增加IsBackButtonVisible属性（默认值True）。设置为False后不显示返回箭头按钮。
+* logo的显示位置移动到窗口左上角。因为实际使用时，放在右边的感觉怪怪的。
+* 如果设置了Icon属性但未设置LogoData属性，将会在logo的位置上显示Icon属性对应的图片。
+* 去掉SubMenu选中时字体加粗。因为在中文环境下，一级菜单不加粗二级菜单反而加粗，不符合中文习惯，干脆不加粗。
+* 增加资源MenuFontSize和SubMenuFontSize用于调整菜单字体大小。因为子菜单字体太小了。
+* 去掉ToUpperConverter和ToLowerConverter等2个转换器。在中文程序中，一般不希望自动改变英文字母的大小写。
 
 # Modern UI for WPF (MUI)
 A set of controls and styles converting your WPF application into a great looking Modern UI app. This open source project is a spin-off of [XAML Spy](http://xamlspy.com), the visual runtime inspector for Silverlight, Windows Phone, Windows Store and WPF. Read the [official announcement](http://xamlspy.com/news/open-sourcing-the-xaml-spy-ui)
