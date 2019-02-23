@@ -191,32 +191,40 @@ namespace FirstFloor.ModernUI.Windows.Controls
             get { return this.messageBoxResult; }
         }
 
-        /// <summary>
-        /// Displays a messagebox.
-        /// </summary>
-        /// <param name="text">The text.</param>
-        /// <param name="title">The title.</param>
-        /// <param name="button">The button.</param>
-        /// <param name="owner">The window owning the messagebox. The messagebox will be located at the center of the owner.</param>
-        /// <returns></returns>
-        public static MessageBoxResult ShowMessage(string text, string title = "", MessageBoxButton button = MessageBoxButton.OK, Window owner = null)
-        {
-            var dlg = new ModernDialog {
-                Title = title,
-                Content = new BBCodeBlock { BBCode = text, Margin = new Thickness(0, 0, 0, 8) },
-                MinHeight = 0,
-                MinWidth = 0,
-                MaxHeight = 480,
-                MaxWidth = 640,
-            };
-            if (owner != null) {
-                dlg.Owner = owner;
-            }
+		/// <summary>
+		/// Displays a messagebox.
+		/// </summary>
+		/// <param name="text">The text.</param>
+		/// <param name="title">The title.</param>
+		/// <param name="button">The button.</param>
+		/// <param name="owner">The window owning the messagebox. The messagebox will be located at the center of the owner.</param>
+		/// <returns></returns>
+		public static MessageBoxResult ShowMessage(string text, string title = "", MessageBoxButton button = MessageBoxButton.OK, Window owner = null)
+		{
+			MessageBoxResult result = MessageBoxResult.None;
+			Action method = () =>
+			{
+				var dlg = new ModernDialog
+				{
+					Title = title,
+					Content = new BBCodeBlock { BBCode = text, Margin = new Thickness(0, 0, 0, 8) },
+					MinHeight = 120,
+					MinWidth = 320,
+					MaxHeight = 480,
+					MaxWidth = 640,
+				};
+				if (owner != null)
+				{
+					dlg.Owner = owner;
+				}
 
-            dlg.Buttons = GetButtons(dlg, button);
-            dlg.ShowDialog();
-            return dlg.messageBoxResult;
-        }
+				dlg.Buttons = GetButtons(dlg, button);
+				dlg.ShowDialog();
+				result = dlg.messageBoxResult;
+			};
+			Application.Current.Dispatcher.Invoke(method);
+			return result;
+		}
 
         private static IEnumerable<Button> GetButtons(ModernDialog owner, MessageBoxButton button)
         {
